@@ -7,10 +7,6 @@ const app: Express = express();
 app.use(express.json());
 app.use("/api", rootRouter);
 
-// export const prismaClient = new PrismaClient({
-//   log: ["query"],
-// });
-
 app.listen(PORT, () => {
-  console.log("app is listening at 9000");
+  console.log(`App is listening at ${PORT}`);
 });
